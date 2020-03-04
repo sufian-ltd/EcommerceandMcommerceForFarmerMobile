@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="An E-commerce And M-commerce Platform For Farmer"
+        android:textColor="#127600"
+        android:textStyle="bold"
+        android:layout_margin="3dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:fontFamily="serif"/>
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="140dp"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:background="@drawable/m"/>
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn1"
+        android:fontFamily="serif"
+        android:textColor="#000"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="17sp"/>
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn1"
+        android:fontFamily="serif"
+        android:textColor="#000"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:hint="Enter Full Name"
+        android:textStyle="bold"
+        android:textColorHint="#000"
+        android:textSize="17sp"/>
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn1"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:hint="Enter Username"
+        android:textColorHint="#000"
+        android:inputType="textPersonName"
+        android:gravity="center"
+        android:textSize="17sp"/>
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn1"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:hint="Enter Password"
+        android:textColorHint="#000"
+        android:gravity="center"
+        android:textSize="17sp"/>
+    <EditText
+        android:id="@+id/etContact"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn1"
+        android:fontFamily="serif"
+        android:textColor="#000"
+        android:hint="Enter Contact"
+        android:textStyle="bold"
+        android:textColorHint="#000"
+        android:inputType="phone"
+        android:gravity="center"
+        android:textSize="17sp"/>
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn1"
+        android:fontFamily="serif"
+        android:hint="Enter Full Address"
+        android:textColorHint="#000"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:inputType="text"
+        android:textSize="17sp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textSize="17sp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn2"
+        android:text="Save changes"
+        android:onClick="editProfile"
+        android:textColor="#fff"/>
+    </LinearLayout>
+</ScrollView>

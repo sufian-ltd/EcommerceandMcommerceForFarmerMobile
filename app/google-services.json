@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1025609499663",
+    "firebase_url": "https://ecommerceandmcommerceforfarmer.firebaseio.com",
+    "project_id": "ecommerceandmcommerceforfarmer",
+    "storage_bucket": "ecommerceandmcommerceforfarmer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025609499663:android:1df482eea214ebca1a8f7a",
+        "android_client_info": {
+          "package_name": "com.example.e_commerceandm_commerceforfarmer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025609499663-k67dm013316ebonbmn5qo6fet9ns4uq7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.e_commerceandm_commerceforfarmer",
+            "certificate_hash": "719892c608fd6d885e0450737d205aa75d4a1a55"
+          }
+        },
+        {
+          "client_id": "1025609499663-7pkpsihglivshq9cthltbq1ae2p1oest.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6ntFjTQZx6T3lqazWo-YouCmYGEy8oag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1025609499663-7pkpsihglivshq9cthltbq1ae2p1oest.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

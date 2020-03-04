@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderProductActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Product Name: "
+            android:textColor="#127600"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Before: 1212TK  Now: 5241TK (per KG)"
+            android:textColor="#ff000b"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvOrderDate"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Order Date: "
+            android:textColor="#000"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/tvUnit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Unit: "
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:textColor="#fff"
+                android:background="@drawable/btn2"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/etQtn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn1"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:hint="Quantity: "
+                android:inputType="numberDecimal"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <!--<EditText-->
+        <!--android:id="@+id/etDeliveryDate"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:background="@drawable/btn1"-->
+        <!--android:fontFamily="serif"-->
+        <!--android:textColor="#000"-->
+        <!--android:textStyle="bold"-->
+        <!--android:gravity="center"-->
+        <!--android:inputType="datetime"-->
+        <!--android:hint="Delivery Date"-->
+        <!--android:textColorHint="#000"-->
+        <!--android:textSize="17sp"/>-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn2"
+            android:fontFamily="serif"
+            android:text="Select Delivery Date"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+        <CalendarView
+            android:id="@+id/dpDeliveryDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:tooltipText="Select Delivery Date">
+
+        </CalendarView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn2"
+            android:fontFamily="serif"
+            android:text="Select Delivery System"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgDelSys"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <RadioButton
+                android:id="@+id/rbLD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Local Delivery (Free)"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rbLP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Local Pickup (Free)"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn2"
+            android:fontFamily="serif"
+            android:text="Select Payment System"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgPaySys"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <RadioButton
+                android:id="@+id/rbCOD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="CASH ON DELIVERY"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <RadioButton
+                android:id="@+id/rbBkash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="CASH ON BKASH"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/etBkashNumber"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn1"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:hint="Bkash Number: "
+            android:inputType="phone"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etBkashPin"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn1"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:hint="Bkash Pin: "
+            android:inputType="numberPassword"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn2"
+            android:fontFamily="serif"
+            android:onClick="order"
+            android:text="Click Here To Order"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

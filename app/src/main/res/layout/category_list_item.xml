@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:background="@drawable/btn1">
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:background="@drawable/cat_icon"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tvCat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category : "
+            android:textSize="17sp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/tvTp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Product : "
+            android:textSize="17sp"
+            android:fontFamily="serif"
+            android:layout_margin="5dp"
+            android:textColor="#000"/>
+    </LinearLayout>
+
+</LinearLayout>
